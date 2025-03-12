@@ -4,7 +4,7 @@ function FiltradoCorredores({ corredores }) {
   const [nacionalidad, setNacionalidad] = useState('');
 
   const cancionesFiltradas = corredores.filter((corredor) =>
-    corredor.forename.toLowerCase().includes(nacionalidad.toLowerCase())
+    corredor.nationality.toLowerCase().includes(nacionalidad.toLowerCase())
   );
 
   return (
@@ -18,7 +18,7 @@ function FiltradoCorredores({ corredores }) {
       />
       <ul>
         {cancionesFiltradas.map((corredor) => (
-          <li key={corredor.driverId}>{corredor.forename}</li>
+          <li key={corredor.driverId}>{corredor.forename} {corredor.surname}</li>
         ))}
       </ul>
     </div>
