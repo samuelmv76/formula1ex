@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListadoCorredores from "./ListadoCorredores";
 import FiltradoCorredores from "./FiltradoCorredores";
+import MasJoven from "./MasJoven";
 
 function Formula1Main() {
   const [corredores, setCorredores] = useState([]);
@@ -20,10 +21,10 @@ function Formula1Main() {
   /** */
   return (
     <div>
-      <h1>SpotifEx</h1>
+      <h1>Formula1</h1>
       <ListadoCorredores corredores={corredores} />
       <FiltradoCorredores corredores={corredores} />
-   
+      <MasJoven corredores={corredores} />
     </div>
   );
 }

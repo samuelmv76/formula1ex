@@ -9,7 +9,7 @@ function FiltradoCorredores({ corredores }) {
 
   return (
     <div>
-      <h2>Filtrar Corredores por Navionalidad</h2>
+      <h2>Filtrar Corredores por Nacionalidad</h2>
       <input
         type="text"
         placeholder="Nombre del corredor"
