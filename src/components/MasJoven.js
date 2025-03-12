@@ -1,11 +1,7 @@
 import React from 'react';
 
 function MasJoven({ corredores }) {
-  if (corredores.length === 0) return null;
 
-  const corredorJoven = corredores.reduce((prev, curr) =>
-    curr.dob < prev.dob ? curr : prev
-  );
 
   return (
     <div>
