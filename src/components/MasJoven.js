@@ -11,7 +11,7 @@ function MasJoven({ corredores }) {
     <div>
       <h2>Corredor Mas Joven</h2>
       <p>
-        -{corredorJoven.forename} <br />
+        - <br />
       </p>
     </div>
   );

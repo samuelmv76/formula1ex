@@ -12,7 +12,7 @@ function FiltradoCorredores({ corredores }) {
       <h2>Filtrar Corredores por Nacionalidad</h2>
       <input
         type="text"
-        placeholder="Nombre del corredor"
+        placeholder="Nacionalidad"
         value={nacionalidad}
         onChange={(e) => setNacionalidad(e.target.value)}
       />
